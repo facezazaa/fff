@@ -19,6 +19,7 @@ html_count_by_age = """
 """
 st.markdown(html_count_by_age, unsafe_allow_html=True)
 
+plt.figure(figsize=(15,5))
 sns.countplot(x='age', data=gender_data, hue='Male')
 plt.title('จำนวนเพศตามช่วงอายุ')
 plt.xlabel('ช่วงอายุ')
@@ -33,11 +34,13 @@ html_sales_by_region = """
 """
 st.markdown(html_sales_by_region, unsafe_allow_html=True)
 
+plt.figure(figsize=(15,5))
 sns.countplot(x='Region', data=gender_data)
 plt.title('ยอดขายตามภูมิภาค')
 plt.xlabel('ภูมิภาค')
 plt.ylabel('ยอดขาย')
 plt.xticks(rotation=45)
 st.pyplot()
+
 
 
