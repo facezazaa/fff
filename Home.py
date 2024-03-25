@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
-gender_data=pd.read_csv('./data/superstore.csv')
+gender_data=pd.read_csv('./data/shopping_trends.csv')
 html_3 = """
 <div style="background-color:#0E1117;border-bottom: 3px solid #ffffff;border-top: 3px solid #ffffff;">
 <center><h3>การทำ Data Visualization เรื่องยอดขาย</h3></center>
