@@ -2,7 +2,7 @@ import streamlit as st
 import seaborn as sns
 import pandas as pd
 import matplotlib
-matplotlib.use('Agg')  
+matplotlib.use('Age')  
 import matplotlib.pyplot as plt
 
 gender_data = pd.read_csv('./data/shopping_trends.csv')
