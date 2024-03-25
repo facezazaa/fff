@@ -41,6 +41,9 @@ plt.xlabel('ภูมิภาค')
 plt.ylabel('ยอดขาย')
 plt.xticks(rotation=45)
 st.pyplot()
+import matplotlib
+matplotlib.use('Agg')  # Use the 'Agg' backend which doesn't require a display
+import matplotlib.pyplot as plt
 
 
 
