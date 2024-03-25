@@ -41,7 +41,7 @@ st.markdown(html_sales_by_region, unsafe_allow_html=True)
 
 plt.figure(figsize=(15, 5))
 import seaborn as sns
-sns.countplot(x='Gender', data=shopping_trends)
+sns.countplot(x='Gender', data=shopping_trends.csv)
 plt.title('ยอดขายตามภูมิภาค')
 plt.xlabel('ช่วงอายุ')
 plt.ylabel('จำนวน')
