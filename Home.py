@@ -1,5 +1,4 @@
 import streamlit as st
-import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
@@ -26,7 +25,7 @@ plt.title('จำนวนเพศตามช่วงอายุ')
 plt.xlabel('ช่วงอายุ')
 plt.ylabel('จำนวน')
 plt.xticks(rotation=45)
-st.pyplot(plt)
+st.pyplot()
 
 html_sales_by_region = """
 <div style="background-color:#0E1117;border-bottom: 3px solid #ffffff;border-top: 3px solid #ffffff;">
@@ -41,4 +40,5 @@ plt.title('ยอดขายตามภูมิภาค')
 plt.xlabel('ภูมิภาค')
 plt.ylabel('ยอดขาย')
 plt.xticks(rotation=45)
-st.pyplot(plt)
+st.pyplot()
+
