@@ -1,3 +1,7 @@
+import matplotlib
+matplotlib.use('Agg')  # Use the 'Agg' backend which doesn't require a display
+import matplotlib.pyplot as plt
+
 import streamlit as st
 import seaborn as sns
 import pandas as pd
@@ -20,8 +24,11 @@ html_count_by_age = """
 """
 st.markdown(html_count_by_age, unsafe_allow_html=True)
 
-plt.figure(figsize=(15,5))
-sns.countplot(x='age', data=gender_data, hue='Male')
+import matplotlib
+matplotlib.use('Agg')  # Use the 'Agg' backend which doesn't require a display
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(15, 5))
 plt.title('จำนวนเพศตามช่วงอายุ')
 plt.xlabel('ช่วงอายุ')
 plt.ylabel('จำนวน')
