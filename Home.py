@@ -1,6 +1,9 @@
 import streamlit as st
 import seaborn as sns
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')  
+import matplotlib.pyplot as plt
 
 gender_data = pd.read_csv('./data/shopping_trends.csv')
 
@@ -41,9 +44,7 @@ plt.xlabel('ภูมิภาค')
 plt.ylabel('ยอดขาย')
 plt.xticks(rotation=45)
 st.pyplot()
-import matplotlib
-matplotlib.use('Agg')  # Use the 'Agg' backend which doesn't require a display
-import matplotlib.pyplot as plt
+
 
 
 
