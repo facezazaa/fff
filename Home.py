@@ -39,8 +39,8 @@ st.markdown("")
 plt.figure(figsize=(15,5))
 sns.countplot(x='Male', data=gender_data, hue='age')
 plt.title('Count of Category by Region')
-plt.xlabel('Region')
-plt.ylabel('Count')
+plt.xlabel('Male')
+plt.ylabel('age')
 
 st.pyplot(plt)
 
