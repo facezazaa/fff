@@ -1,6 +1,8 @@
 import matplotlib
 matplotlib.use('Agg')  # Use the 'Agg' backend which doesn't require a display
 import matplotlib.pyplot as plt
+import seaborn as sns
+import streamlit as st
 
 import streamlit as st
 import seaborn as sns
@@ -42,14 +44,13 @@ html_sales_by_region = """
 """
 st.markdown(html_sales_by_region, unsafe_allow_html=True)
 
-plt.figure(figsize=(15,5))
+plt.figure(figsize=(15, 5))
 sns.countplot(x='Region', data=gender_data)
 plt.title('ยอดขายตามภูมิภาค')
-plt.xlabel('Famale')
-plt.ylabel('Size')
+plt.xlabel('Region')
+plt.ylabel('Count')
 plt.xticks(rotation=45)
 st.pyplot()
-
 
 
 
